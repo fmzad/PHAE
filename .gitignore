@@ -1,0 +1,17 @@
+# IDE stuff
+goorm.manifest
+
+# python stuff
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+*.db
+
+.eggs/
+dist/
+*.egg-info

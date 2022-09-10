@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: 'Times New Roman';
+            }
+        </style>
+    </head>
+    <body style="padding: 0px; margin: 0px;">
+        <div style="border-bottom: 1px solid black;">
+            <a href="/about">ABOUT</a>
+            <a href="/dev">DEV</a>
+            <a href={% url 'page-all' %}>PAGE</a>
+            <a href="/image">IMAGE</a>
+        </div>
+        <div style="padding: 10px;">
+        {% block app %}
+        
+        {% endblock %}
+        </div>
+    </body>
+</html>

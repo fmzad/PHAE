@@ -1,0 +1,10 @@
+{% extends 'page.html' %}
+
+{% block content %}
+<form action={% url "page-move" page_id %} method="post">
+    {{page_id}}
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

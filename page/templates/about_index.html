@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block app %}
+
+Specs
+<li>100 max char limit for page title and 1000 for content</li>
+<li>Only meant for one-user per time experience. Will have errors if multiple-users use at once.</li>
+<li>The whole wiki works with UNICODE only. No ASCII.</li>
+
+<h1>Functionalities</h1>
+<ul>
+    <li>View all pages</li>
+    <li>Create page</li>
+    <li>Edit page</li>
+    <li>Move page content to a new page</li>
+    <li>View all revisions of a page</li>
+</ul>
+<h2>
+    Wikimarkup Language
+</h2>
+<ul>
+    <li>Newline Lives</li>
+</ul>
+<h2>User</h2>
+<ul>
+    <li>User based on django.contrib.auth</li>
+</ul>
+
+{% endblock %}

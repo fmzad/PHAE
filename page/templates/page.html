@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block app %}
+<div>
+    <a href={% url 'page-all' %}>ALL</a> <a href={% url 'page-create' %}>CREATE</a>
+</div>
+<a href={% url 'page-view' page_id %}>VIEW</a> <a href={% url 'page-edit' page_id %}>EDIT</a> <a href={% url 'page-move' page_id %}>MOVE</a> <a>DELETE</a> <a href={% url 'page-revisions' page_id%}>REVISIONS</a>
+{% block content %}
+Page create/view/edit/delete etc..
+{% endblock %}
+{% endblock %}

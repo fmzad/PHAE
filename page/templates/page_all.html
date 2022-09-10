@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block app %}
+{% load mptt_tags %}
+<ul>
+    {% recursetree pages %}
+        <li>
+            <a href={% url 'page-view' node.pk %}>{{ node.title }}</a>
+            {% if not node.is_leaf_node %}
+                <ul class="children">
+                    <a href={% url 'page-view' node.pk %}>{{ children }}</a>
+                </ul>
+            {% endif %}
+        </li>
+    {% endrecursetree %}
+</ul>
+{% endblock %}
