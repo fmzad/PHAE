@@ -1,6 +1,11 @@
-# Forestwiki
-- A Wiki engine based on markdown and uses sqlite, with a page structure resembling a forest of trees.
-- Differentiated specifications and UX regarding "content movement", "page structure", and "page URL".
+# Private/Public Homepage And Encyclopedia
+- A platform for creating private/public Forests. A Forest is a page structure resembling a forest of trees.
+- Pages are shown in Homepage Mode or Encyclopedia Mode.
+	- Encyclopedia Mode uses Github Markdown
+	- Homepage Mode uses Github Markdown, HTML, CSS, and Javascript.
+- Pages are tracked, having history. You cannot change the title of the page. You can, however, move content of a page to another page, essentially changing the title. You cannot delete a page once created.
+- Page URL are /username/forestname/pageurl
+	- pageurl is based on title(title if no slash, simple uuid if slash): heize -> album1 => title/heize/album1 | heize/ -> album1 => uuid/heize//album1 | heize -> /album1 => uuid/heize//album1
 - Dependencies
 	- Language: Python 3.7
 	- Framework: Django 3.0
