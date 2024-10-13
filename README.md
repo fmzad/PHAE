@@ -23,6 +23,3 @@ Easy. Make a python environment and install dependencies + run django commands.
 5. python manage.py runserver
 Optional
 1. python manage.py createsuperuser
-
-# Contribution
-Contact me at `kicomah@gmail.com`
